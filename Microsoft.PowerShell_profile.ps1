@@ -5,6 +5,7 @@ Import-Module posh-git
 Get-Date
 d:
 
+#Start Functions
 function vim ($File) {
     $LOCATION  = Get-Location;
     #Write-Output $File
