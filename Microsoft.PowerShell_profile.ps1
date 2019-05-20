@@ -8,7 +8,6 @@ d:
 #Start Functions
 function vim ($File) {
     $LOCATION  = Get-Location;
-    #Write-Output $File
     #Write-Output "---------------------------------"
     if (-Not $File.Contains(":") ) {
         $File =  $LOCATION.ToString() + "/" + $File
