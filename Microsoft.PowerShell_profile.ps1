@@ -1,5 +1,10 @@
 $SCRIPTPATH = "D:\Projects\_Scripts"
 
+#Start Commands
+Import-Module posh-git
+Get-Date
+d:
+
 function vim ($File) {
     $LOCATION  = Get-Location;
     #Write-Output $File
@@ -15,5 +20,9 @@ function vim ($File) {
     #Write-Output $File
     bash -c "vim /mnt/$File"
 }
-Get-Date
-d:
+
+function Update-Profile (){
+	$NEWPROFILE = "$SCRIPTPATH\my-powershell-profile\Microsoft.PowerShell_profile.ps1"
+	Copy-Item -Path $NEWPROFILE -Destination $PROFILE -Force
+}
+
