@@ -3,6 +3,7 @@ $SCRIPTPATH = "D:\Projects\_Scripts"
 #Start Commands
 Import-Module posh-git
 Get-Date
+Set-Alias -Name Open-Project -Value D:\Projects\_Scripts\my-powershell-profile\Open-AcmsProject.ps1
 d:
 
 #Start Functions
